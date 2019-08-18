@@ -1,1 +1,69 @@
-/* No CSS */
+@import url("https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap");
+body, html {
+  height: 100%;
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-family: 'Lexend Exa', sans-serif;
+}
+
+body {
+  background-color: #F2EBC9;
+}
+
+nav {
+  background-color: #404040;
+}
+
+#navbar-dark {
+  background-color: #F2EBC9;
+}
+
+nav div a {
+  color: #404040;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.2em 1.5em;
+  margin: 0.2em 1em 0.2em 0;
+  background-color: #56B5BF;
+  border-radius: 15px;
+}
+
+nav button[data-toggle="collapse"] i {
+  color: #BFB169;
+}
+
+.btn-success {
+  background-color: #BFB169;
+  border-color: #BFB169;
+}
+
+.btn-success:hover {
+  background-color: #BFB169;
+  border-color: #BFB169;
+}
+
+.btn-success:active {
+  background-color: #BFB169;
+  border-color: #BFB169;
+}
+
+.btn-success:not(:disabled):not(.disabled):active, .show > .btn-success.dropdown-toggle {
+  background-color: #BFB169;
+  border-color: #BFB169;
+}
+
+.btn-success:not(:disabled):not(.disabled).active:focus, .btn-success:not(:disabled):not(.disabled):active:focus, .show > .btn-success.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #BF784E;
+          box-shadow: 0 0 0 0.2rem #BF784E;
+}
+
+.btn-success.focus, .btn-success:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #BF784E;
+          box-shadow: 0 0 0 0.2rem #BF784E;
+}
+
+button:focus {
+  outline: 1px;
+}

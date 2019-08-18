@@ -1,6 +1,6 @@
-# Opposal ![Opposal Logo](/img/favicon.ico)
+# Opposal ![Opposal Logo](/img/favicon128.png)
 
-### Pon la Pieza de Tu sitio!!
+### Pon la Pieza de tu sitio!!
 
-- Versatil
+- Versátil
 - Lo que tu necesitas
