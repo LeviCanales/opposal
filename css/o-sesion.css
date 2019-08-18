@@ -77,3 +77,8 @@ button:focus {
 #principal:hover {
   background-position: 45.5% 24%, 49% center, center 65%;
 }
+
+#sesion {
+  max-width: 330px;
+  margin: auto;
+}

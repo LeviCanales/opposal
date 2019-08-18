@@ -1,0 +1,73 @@
+$colores: (colorDPM1: #56B5BF, colorDPM2: #BFB169, colorDPM3: #F2EBC9, colorDPM4: #BF784E, colorDPM5: #404040)
+
+@function color($color)
+  @return map-get($colores, $color)
+
+@import url("https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap")
+
+$enAncho: 847px
+$enAlto: 320px
+
+=enAncho
+  @media only screen and (max-width: #{$enAncho}) and (max-height: #{$enAlto})
+    @content
+
+body, html
+  height: 100%
+  width: 100%
+  display: -ms-flexbox
+  display: flex
+  font-family: 'Lexend Exa', sans-serif
+
+body
+  background-color: color(colorDPM3)
+
+nav
+  background-color: color(colorDPM5)
+
+#navbar-dark
+  background-color: color(colorDPM3)
+
+nav div a, nav div a:hover, nav div a:focus
+  color: color(colorDPM5)
+  font-weight: bolder
+  display: inline-block
+  padding: 0.2em 1.5em
+  margin: 0.2em 1em 0.2em 0
+  background-color: color(colorDPM1)
+  border-radius: 15px
+  text-decoration: none
+
+nav button[data-toggle="collapse"] i
+  color: color(colorDPM2)
+
+=botones($btn-tipo, $color, $focus)
+  .btn-#{$btn-tipo}, .btn-#{$btn-tipo}:hover, .btn-#{$btn-tipo}:active, .btn-#{$btn-tipo}:not(:disabled):not(.disabled):active, .show>.btn-#{$btn-tipo}.dropdown-toggle
+    background-color: color(#{$color})
+    border-color: color(#{$color})
+
+  .btn-#{$btn-tipo}.focus, .btn-#{$btn-tipo}:focus, .btn-#{$btn-tipo}:not(:disabled):not(.disabled).active:focus, .btn-#{$btn-tipo}:not(:disabled):not(.disabled):active:focus, .show>.btn-#{$btn-tipo}.dropdown-toggle:focus
+    box-shadow: 0 0 0 0.2rem color(#{$focus})
+
++botones("success", "colorDPM2", "colorDPM4")
+
++botones("secondary", "colorDPM4", "colorDPM2")
+
+button:focus
+  outline: 1px
+
+.mb-auto
+  +enAncho
+    margin-bottom: 90px !important
+
+#principal
+  background-image: url("../img/logo/opposalP1.png"), url("../img/logo/opposalP2.png"), url("../img/logo/opposalP3.png")
+  background-repeat: no-repeat
+
+  // background-position: 40% 24%, 49% center, 60% 65%;
+  background-position: 40% 24%, 49% center, center 65%
+  background-size: 23%, 28.5%, 30%
+  transition: background-position 1s
+
+#principal:hover
+  background-position: 45.5% 24%, 49% center, center 65%
