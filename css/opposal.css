@@ -22,7 +22,7 @@ nav {
 
 nav div a, nav div a:hover, nav div a:focus {
   color: #404040;
-  font-weight: bolder;
+  font-weight: bold;
   display: inline-block;
   padding: 0.2em 1.5em;
   margin: 0.2em 1em 0.2em 0;
@@ -68,12 +68,32 @@ button:focus {
 #principal {
   background-image: url("../img/logo/opposalP1.png"), url("../img/logo/opposalP2.png"), url("../img/logo/opposalP3.png");
   background-repeat: no-repeat;
-  background-position: 40% 24%, 49% center, center 65%;
+  background-position: 45.5% 24%, 46% center, center 65%;
   background-size: 23%, 28.5%, 30%;
   -webkit-transition: background-position 1s;
   transition: background-position 1s;
 }
 
-#principal:hover {
-  background-position: 45.5% 24%, 49% center, center 65%;
+@media only screen and (max-width: 995px) and (max-height: 545px) {
+  #principal {
+    background-image: url("../img/logo/opposal-logoAI.png");
+    background-position: center center;
+    background-size: 40%;
+  }
+}
+
+@media only screen and (min-height: 1080px) {
+  #principal {
+    background-image: url("../img/logo/opposal-logoAI.png");
+    background-position: center center;
+    background-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-height: 546px) {
+  #principal {
+    background-image: url("../img/logo/opposal-logoAI.png");
+    background-position: center center;
+    background-size: 40%;
+  }
 }

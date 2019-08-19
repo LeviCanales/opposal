@@ -13,7 +13,7 @@
 <body>
   <div class="d-flex flex-column container mx-12">
   <nav class="navbar navbar-expand-md fixed-top">
-      <a class="navbar-brand" href="#"><img src="img/favicon128.png" height="40px"></a>
+      <a class="navbar-brand" href="index.html"><img src="img/favicon128.png" height="40px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraInicio" aria-controls="barraInicio" aria-expanded="false" aria-label="Toggle navigation">
           <i class="far fa-caret-square-down fa-3x"></i>
       </button>
@@ -23,8 +23,8 @@
           
           </ul>
           <center>
-            <a class="linkBarra" href="#">Inicio</a>
-            <a class="linkBarra" href="#">Registrarse</a>
+            <a class="linkBarra" href="index.html">Docs</a>
+            <a class="linkBarra" href="signup.html">Registrarse</a>
           </center>
           <form class="form-inline my-0 my-lg-0">
           <div class="input-group mx-auto">
@@ -40,18 +40,22 @@
   <header class="mb-auto" id="encabezado"></header>
 
   <main role="main" class="text-center">
-    <form id="sesion">
+    <section id="sesion">
       <div class="form-group">
-        <label for="txt-correo">Dirección de Correo/Usuario</label>
-        <input type="email" class="form-control" id="txt-correo" aria-describedby="ayuda-correo" placeholder="Enter email">
+        <label for="txt-correo"><h5>Dirección de Correo</h5></label>
+        <input type="email" class="form-control" id="txt-correo" aria-describedby="ayuda-correo" placeholder="Ingrese un Correo" required>
+        <div class="valid-feedback">Ok</div>
+        <div class="invalid-feedback">Ingresa un Correo Correcto</div>
         <small id="ayuda-correo" class="form-text text-muted">No compratiremos tu correo con nadie más.</small>
       </div>
       <div class="form-group">
-        <label for="txt-contra">Contraseña</label>
-        <input type="password" class="form-control" id="txt-contra" placeholder="Password">
+        <label for="txt-contra"><h5>Contraseña</h5></label>
+        <input type="password" class="form-control" id="txt-contra" placeholder="Contraseña" required>
+        <div class="valid-feedback">Ok</div>
+        <div class="invalid-feedback">Ingresa una contraseña correcta</div>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+      <button class="btn btn-primary" onclick="iniciarSesion()">Iniciar Sesión</button>
+    </section>
   </main>
   
     <footer class="mt-auto">
@@ -63,6 +67,6 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/opposal.js"></script>
+  <script src="js/o-sesion.js"></script>
 </body>
 </html>

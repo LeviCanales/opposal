@@ -45,12 +45,12 @@ nav button[data-toggle="collapse"] i {
           box-shadow: 0 0 0 0.2rem #BF784E;
 }
 
-.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
   background-color: #BF784E;
   border-color: #BF784E;
 }
 
-.btn-secondary.focus, .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+.btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
   -webkit-box-shadow: 0 0 0 0.2rem #BFB169;
           box-shadow: 0 0 0 0.2rem #BFB169;
 }
@@ -79,6 +79,9 @@ button:focus {
 }
 
 #sesion {
-  max-width: 330px;
+  max-width: 390px;
   margin: auto;
+  background-color: rgba(86, 181, 191, 0.5);
+  padding: 10px;
+  border-radius: 15px;
 }
